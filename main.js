@@ -36,13 +36,13 @@ $(function() {
 
 		for (var i = 0; i < textSplit.length; i++) {
 			if (masterI == 0) {
-				text += "<div class='row'>"
+				text += "<tr>"
 			}
-			text += "<div class='" + $('.type-of-bootstrap-' + masterI).val() + "'>" + textSplit[i] + "</div>"
+			text += "<td>" + textSplit[i] + "</td>"
 			masterI++
 			if (masterI > cols -1) {
 				masterI = 0
-				text += "</div>"
+				text += "</tr>"
 			}
 		};
 		
