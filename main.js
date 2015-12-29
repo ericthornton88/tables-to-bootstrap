@@ -27,7 +27,7 @@ $(function() {
 	})
 
 	$('body').on('click', '.make-magic', function() {
-		var text = '<div class="table-responsive"><table>'
+		var text = '<div class="table-responsive"><table class="table table-striped table-condensed">'
 		var textArea = $('#commaStuff').val()
 		var textSplit = textArea.split(',')
 		console.log(textSplit)
